@@ -1,0 +1,300 @@
+html {
+    scroll-padding-top: 150px;
+}
+
+body {
+    background-color: #FCD2AF;
+    margin: 0px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #FFB3A4;
+    margin: 0px;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2
+}
+
+nav a {
+    padding: 14px;
+    color: black;
+    font-size: large;
+    display: inline-block;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #FF7A5F;
+    color: white
+}
+
+main {
+    padding: 40px;
+    margin-top: 150px;
+}
+
+.card {
+    background-color: #FFEEDD;
+    border-radius: 10px;
+    padding: 50px;
+    margin: 20px;
+    overflow: hidden;
+}
+
+.title {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.title2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.myphoto {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    float: left;
+    margin: 50px;
+    overflow: hidden;
+    transform: scale(1, 1);
+    transition: all 1s ease-out;
+}
+
+.myphoto:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.introduce {
+    font-size: 25px;
+    font-family: 微軟正黑體;
+    letter-spacing: 5px;
+    line-height: 200%;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    margin: 20px;
+    overflow: hidden;
+    transform: scale(1, 1);
+    transition: all 1s ease-out;
+}
+
+.icon:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.motto {
+    margin: 20px;
+    background-color: #FF7A5F;
+    padding: 40px;
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.area {
+    display: flex;
+}
+
+.left {
+    flex: 1;
+}
+
+.right {
+    flex: 1;
+}
+
+.bar {
+    width: 400px;
+    height: 50px;
+    border: 5px solid white;
+    border-radius: 30px;
+    position: relative;
+}
+
+.python {
+    width: 20%;
+    height: 100%;
+    background-color: #FF8D76;
+    border-radius: 30px;
+    transition: all .7s;
+}
+
+.bar:hover .python {
+    width: 80%;
+}
+
+.python:hover::before {
+    position: absolute;
+    top: -30px;
+    right: 0;
+    content: '80%';
+}
+
+.java {
+    width: 20%;
+    height: 100%;
+    background-color: #FF8D76;
+    border-radius: 30px;
+    transition: all .7s;
+}
+
+.bar:hover .java {
+    width: 70%;
+}
+
+.java:hover::before {
+    position: absolute;
+    top: -30px;
+    right: 0;
+    content: '70%';
+}
+
+.html {
+    width: 20%;
+    height: 100%;
+    background-color: #FF8D76;
+    border-radius: 30px;
+    transition: all .7s;
+}
+
+.bar:hover .html {
+    width: 90%;
+}
+
+.html:hover::before {
+    position: absolute;
+    top: -30px;
+    right: 0;
+    content: '90%';
+}
+
+.css {
+    width: 20%;
+    height: 100%;
+    background-color: #FF8D76;
+    border-radius: 30px;
+    transition: all .7s;
+}
+
+.bar:hover .css {
+    width: 85%;
+}
+
+.css:hover::before {
+    position: absolute;
+    top: -30px;
+    right: 0;
+    content: '85%';
+}
+
+.circle1 {
+    --width: 200px;
+    --percent: 88;
+    --deg: calc(360deg * calc(var(--percent) / 100));
+    width: var(--width);
+    height: var(--width);
+    border-radius: 50%;
+    margin: 0px auto;
+    background-image: conic-gradient(#E86F56 var(--deg), #FFB3A4 var(--deg));
+    position: relative;
+}
+
+.circle2 {
+    --width: 200px;
+    --percent: 90;
+    --deg: calc(360deg * calc(var(--percent) / 100));
+    width: var(--width);
+    height: var(--width);
+    border-radius: 50%;
+    margin: 0px auto;
+    background-image: conic-gradient(#E86F56 var(--deg), #FFB3A4 var(--deg));
+    position: relative;
+}
+
+.circle3 {
+    --width: 200px;
+    --percent: 75;
+    --deg: calc(360deg * calc(var(--percent) / 100));
+    width: var(--width);
+    height: var(--width);
+    border-radius: 50%;
+    margin: 0px auto;
+    background-image: conic-gradient(#E86F56 var(--deg), #FFB3A4 var(--deg));
+    position: relative;
+}
+
+.circle4 {
+    --width: 200px;
+    --percent: 80;
+    --deg: calc(360deg * calc(var(--percent) / 100));
+    width: var(--width);
+    height: var(--width);
+    border-radius: 50%;
+    margin: 0px auto;
+    background-image: conic-gradient(#E86F56 var(--deg), #FFB3A4 var(--deg));
+    position: relative;
+}
+
+.circle-inside {
+    --bar-width: 30px;
+    position: absolute;
+    display: flex;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: #F8EDEB;
+    width: calc(var(--width) - var(--bar-width));
+    height: calc(var(--width) - var(--bar-width));
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+}
+
+.photo {
+    margin: 70px;
+    width: 400px;
+    height: 350px;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+.word {
+    margin: 70px;
+    width: 400px;
+    height: 350px;
+    background-color: #FCD5CE;
+    font-size: 25px;
+    border-radius: 10px;
+    font-family: "標楷體";
+}
+
+a:hover img {
+    opacity: 0.5;
+}
+
+.word:hover {
+    background-color: #FE5F55;
+    color: white;
+}
+
+footer {
+    background-color: #E86F56;
+    color: #444444;
+    text-align: center;
+    padding: 10px;
+}
